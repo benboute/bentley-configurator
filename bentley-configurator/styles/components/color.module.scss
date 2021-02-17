@@ -1,0 +1,35 @@
+@import "../general/variables.scss";
+
+.color {
+  display: block;
+  width: 50px;
+  height: 50px;
+  transition: box-shadow 0.22s ease-out;
+  box-shadow: 0 2px 8px #ffffff;
+  border: 1px solid #efefef;
+}
+
+.colorlink {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  &:hover {
+    .color {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &:active,
+  &.active {
+    box-shadow: 0 4px 8px rgba(#000000, 0.5);
+  }
+}
+
+.colortitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
+  margin-top: 6px;
+}

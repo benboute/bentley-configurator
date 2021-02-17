@@ -1,0 +1,18 @@
+@import "../general/variables.scss";
+@import "../general/grid.scss";
+
+.colorsWrapper {
+  > h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+.colorpicker {
+  display: flex;
+  align-items: center;
+  margin-top: $rule;
+  > * {
+    margin-right: $rule * 2;
+  }
+}

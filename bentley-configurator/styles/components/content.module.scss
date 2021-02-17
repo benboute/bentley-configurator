@@ -1,0 +1,17 @@
+@import "../general/variables.scss";
+
+.contentContainer {
+  display: block;
+  margin: $rule * 4 0;
+  width: 100%;
+  padding: 0 $rule * 8;
+}
+
+.specsWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.flyout {
+  margin: $rule * 4 0;
+}

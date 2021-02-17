@@ -1,0 +1,66 @@
+@import "../general/variables.scss";
+
+.Sidebar {
+  position: relative;
+  width: 500px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 6px 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: $rule * 3 0;
+
+  h2 {
+    display: block;
+    margin-top: $rule;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: #000000;
+    span {
+      color: $special_color;
+    }
+  }
+  h3 {
+    display: block;
+    margin-top: $rule/4;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: #000000;
+  }
+}
+
+.optionsWrapper {
+  margin: $rule * 2 0;
+}
+
+.buttonWrapper {
+  position: absolute;
+  bottom: $rule * 2;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+  .summary {
+    display: inline-block;
+    padding: $rule $rule * 2;
+    background-color: $special_color;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
