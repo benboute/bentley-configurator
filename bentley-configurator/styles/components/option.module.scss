@@ -1,6 +1,6 @@
 @import "../general/variables.scss";
 
-.Option {
+.option {
   position: relative;
   display: block;
   height: 150px;
@@ -28,8 +28,10 @@
     .overlay {
       opacity: 0.45;
     }
-    .title {
-      opacity: 0;
+  }
+  &.active {
+    .overlay {
+      opacity: 0.45;
     }
   }
   .title {

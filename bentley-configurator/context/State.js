@@ -3,10 +3,11 @@ import { createContext, useContext, useState } from 'react';
 export const Car = createContext([{}, () => {}]);
 
 export function AppWrapper({ children }) {
-  const [state, setState] = useState({color: {id:1, code:"#000000", title:"black"}});  
+  const [configuration, setConfiguration] = useState({car: {color: {id:1, code:"#363636", title:"Dark slate gray"}, hide: {id:1, name:"Amalfi", price:"0"}, rims: {id:1, name:"Default", price:"0"}}});  
+ 
 
   return (
-    <Car.Provider value={[state, setState]}>
+    <Car.Provider value={[configuration, setConfiguration]}>
       {children}
     </Car.Provider>
   );

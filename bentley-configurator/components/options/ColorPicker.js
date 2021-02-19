@@ -8,20 +8,20 @@ import colors from '../../data/colors';
 import { Car } from '../../context/State';
 
 const ColorPicker = () => {
-  const [state, setState] = useContext(Car);
+  const [configuration, setConfiguration] = useContext(Car);
 	return (
-			<div className={style.colorsWrapper}>
-        <h2>Pick your color</h2>
-				<ul className={style.colorpicker}>
-					{colors.map((color, index) => (
-						<Color
-							key={index}
-              color={color}
-              currentColor={state.color} />
-					))}
-				</ul>
-			</div>
-		);
+		<div className={style.colorsWrapper}>
+			<h2>Pick your color</h2>
+			<ul className={style.colorpicker}>
+				{colors.map((color, index) => (
+				<Color
+					key={index}
+					color={color}
+					currentColor={configuration.color} />
+				))}
+			</ul>
+		</div>
+	);
 }
 
 export default ColorPicker;

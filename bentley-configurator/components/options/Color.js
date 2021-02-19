@@ -3,17 +3,19 @@ import React, { useContext, useEffect } from 'react';
 import style from '../../styles/components/color.module.scss';
 import { Car } from '../../context/State';
 
-const Color = ({color, currentColor}) => {
-  const [state, setState] = useContext(Car);
+const Color = ({color}) => {
+  const [configuration, setConfiguration] = useContext(Car);
 
   const updateColor = selectedColor => {
-    setState(state => ({...state, color: selectedColor }))
+    setConfiguration(configuration => (
+		{...configuration,
+			 car: { ...configuration.car, color: selectedColor }}))
   }
 
 	return (
 		<li className={style.colorWrap}>
 			<button onClick={() => {updateColor(color)}}
-				className={`${style.colorlink} ${color.id === state.color.id ? style.active : ""}`} 	>
+				className={`${style.colorlink} ${color.id === configuration.car.color.id ? style.active : ""}`} 	>
 				<div className={style.color} style={{backgroundColor: color.code}}></div>
 			</button>
 		</li>

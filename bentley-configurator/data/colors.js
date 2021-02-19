@@ -1,30 +1,22 @@
 export default [
 {
 	id: 1,
-	code: '#000000',
-	title: 'black'
+	code: '#363636',
+	title: 'Dark slate gray'
 }, {
   	id: 2,
-	code: '#fefefe',
-	title: 'pearl'
+	code: '#625965',
+	title: 'Dim gray'
 },{
   	id: 3,
-	code: '#2c4cff',
-	title: 'blue'
+	code: '#a09867',
+	title: 'Dark Khaki'
 },{
 	id: 4,
-	code: '#2c4cff',
-	title: 'blue'
+	code: '#d9d691',
+	title: 'Khaki'
 },{
 	id: 5,
-	code: '#2c4cff',
-	title: 'blue'
-},{
-	id: 6,
-	code: '#2c4cff',
-	title: 'blue'
-},{
-	id: 7,
-	code: '#2c4cff',
-	title: 'blue'
+	code: '#3f5390',
+	title: 'Dark slate blue'
 }]

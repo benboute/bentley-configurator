@@ -15,6 +15,10 @@
   align-items: center;
   margin: $rule * 3 0;
 
+  > * {
+    cursor: pointer;
+  }
+
   h2 {
     display: block;
     margin-top: $rule;
@@ -59,6 +63,7 @@
     font-weight: 600;
     color: white;
     box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
     &:hover {
       box-shadow: none;
     }

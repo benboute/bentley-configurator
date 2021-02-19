@@ -1,0 +1,56 @@
+@import "../general/variables.scss";
+
+.panelContainer {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  height: 100vh;
+  width: 500px;
+  background-color: #ffffff;
+  box-shadow: -6px 0 5px 0 rgba(0, 0, 0, 0.3);
+  padding: $rule * 2 $rule * 2;
+  &.open {
+    display: block;
+  }
+}
+
+.colorSelection,
+.interiorSelection,
+.wheelSelection {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.interiorSelection,
+.wheelSelection {
+  display: flex;
+  flex-direction: column;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  margin: $rule * 2 0;
+  > span {
+    display: block;
+    margin-bottom: $rule/2;
+  }
+  b {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .closeButton {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
